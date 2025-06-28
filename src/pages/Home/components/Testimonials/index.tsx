@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import classNames from 'classnames';
 
 type CardType = {
+  id: number
   avatar: string;
   name: string;
   role: string;
@@ -13,24 +14,28 @@ type CardType = {
 
 const cards: CardType[] = [
   {
+    id: 1,
     avatar: '/assets/img/home/testimonials/avatar.png',
     name: "Nathan Clark",
     role: "Student",
     text: "“Drewl has done so much work with Headless platforms, and we knew the Drewl team was incredibly well-versed in that space.”",
     campany: '/assets/img/home/testimonials/campany.svg'
   }, {
+    id: 2,
     avatar: '/assets/img/home/testimonials/avatar.png',
     name: "Nathan Clark",
     role: "Student",
     text: "“Drewl has done so much work with Headless platforms, and we knew the Drewl team was incredibly well-versed in that space.”",
     campany: '/assets/img/home/testimonials/campany.svg'
   }, {
+    id: 3,
     avatar: '/assets/img/home/testimonials/avatar.png',
     name: "Nathan Clark",
     role: "Student",
     text: "“Drewl has done so much work with Headless platforms, and we knew the Drewl team was incredibly well-versed in that space.”",
     campany: '/assets/img/home/testimonials/campany.svg'
   }, {
+    id: 4,
     avatar: '/assets/img/home/testimonials/avatar.png',
     name: "Nathan Clark",
     role: "Student",
@@ -67,14 +72,14 @@ const Testimonials = () => {
           >
             {cards.map((card, index) => {
               return <SwiperSlide key={index}>
-                <Card key={index} data={card} />
+                <Card key={card.id} data={card} />
               </SwiperSlide>
             })}
           </Swiper>
 
             <div className={style.pagination}>
-              {cards.map((i, index) => {
-                return <div key={index} className={classNames(style.paginationMark, currentSlide === index && style.active)}></div>
+              {cards.map((card, index) => {
+                return <div key={card.id} className={classNames(style.paginationMark, currentSlide === index && style.active)}></div>
               })}
             </div>
           </>
