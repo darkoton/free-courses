@@ -41,9 +41,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
+
   @media (any-hover: hover) {
     cursor: pointer;
     transition: all 0.3s ease 0s;
+
     &:hover {
       transform: translateX(2%);
     }
@@ -54,15 +56,18 @@
   flex-shrink: 0;
   width: 26px;
   height: 26px;
+  color: var(--white);
 }
 
 @media (max-width: 640px) {
   .decor {
     transform: translateX(65%);
   }
+
   .body {
     padding: 57px 0;
   }
+
   .title {
     font-weight: 700;
     font-size: 33px;

@@ -1,10 +1,16 @@
 import { createBrowserRouter } from "react-router";
 
-import { Home } from "@/pages";
+import { Home, ExploreTopics } from "@/pages";
 
-const routes = createBrowserRouter([{
-    path: '/',
-    element: <Home/>
-}])
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/explore-topics",
+    element: <ExploreTopics />,
+  },
+]);
 
-export default routes
+export default routes;
