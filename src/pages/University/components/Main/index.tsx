@@ -32,7 +32,7 @@ const Main = () => {
               <div className={style.head}>
                 <img
                   className={style.decor}
-                  src="/assets/img/university/main/decor.svg"
+                  src="/assets/img/university/decor.svg"
                   alt="Decor"
                 />
 
