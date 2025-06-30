@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 
-import { Home, ExploreTopics } from "@/pages";
+import { Home, ExploreTopics, University } from "@/pages";
 
 const routes = createBrowserRouter([
   {
@@ -10,6 +10,10 @@ const routes = createBrowserRouter([
   {
     path: "/explore-topics",
     element: <ExploreTopics />,
+  },
+  {
+    path: "/university",
+    element: <University />,
   },
 ]);
 

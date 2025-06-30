@@ -1,0 +1,143 @@
+.main {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: 1440px;
+    position: relative;
+    z-index: 0;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 106.5px;
+    flex-direction: column;
+    gap: 24px;
+
+    @include fluid(padding-top, 106.5px, 66px, 375px, 1236px);
+
+    @media (max-width: 1024px) {
+        padding-bottom: 0;
+    }
+}
+
+.img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    @media (max-width:1024px) {
+        display: none;
+    }
+}
+
+.imgMob {
+    height: 151px;
+    margin-bottom: -37px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 24px;
+    max-width: 500px;
+
+    @media (min-width: 1024.2px) {
+        @include fluid(max-width, 606px, 320px, 1024px, 1236px)
+    }
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.decor {
+    width: 44px;
+    max-width: 240px;
+    margin-bottom: 8px;
+
+    @media (max-width: 640px) {
+        display: none;
+    }
+}
+
+.rates {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star {
+    font-size: 16px;
+    color: var(--surface-yellow);
+}
+
+.reviews {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--text-secondory-light);
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    font-size: 4px;
+    color: var(--surface-secondory);
+
+    @media (max-width: 640px) {
+        display: none;
+    }
+}
+
+.dotMob {
+    display: none;
+
+    @media (max-width: 640px) {
+        display: block;
+    }
+}
+
+.button {
+    padding: 11px 8px 11px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .arrow {
+        font-size: 26px;
+    }
+}
+
+.offer {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    img {
+        @include fluid(max-height, 53px, 32px, 375px, 1236px)
+    }
+}

@@ -1,4 +1,5 @@
 import Home from "./Home";
 import ExploreTopics from "./ExploreTopics";
+import University from "./University";
 
-export { Home, ExploreTopics };
+export { Home, ExploreTopics, University };
