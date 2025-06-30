@@ -61,6 +61,13 @@
   }
 }
 
+.h4-bold {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 105%;
+  letter-spacing: -0.04em;
+}
+
 .h4-bold-responsive {
   font-weight: 700;
   font-size: 33px;

@@ -1,12 +1,13 @@
 .search {
   background-color: var(--white);
+  overflow: hidden;
 }
 
 .body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 0 34px 0;
+  padding: 32px 0;
 
   @media (max-width: 640px) {
     padding-bottom: 24px;
@@ -41,7 +42,7 @@
   padding: 8px 8px 8px 16px;
   gap: 21px;
   width: 100%;
-  max-width: 395px;
+  max-width: 600px;
   margin-bottom: 24px;
 }
 
@@ -64,9 +65,66 @@
   font-size: 24px;
 }
 
-.courses {
+.filters {
+  display: none;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width:640px) {
+    display: flex;
+  }
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  padding: 8px 16px;
+  background-color: var(--white);
+}
+
+.dropdownArrow {
+  font-size: 16px;
+}
+
+.filterButton {
   display: flex;
   gap: 8px;
+  border: 1px solid var(--border-primary) !important;
+  border-radius: 12px;
+  padding: 8px 16px 8px 8px;
+  background-color: var(--white);
+}
+
+.filterCounter {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--surface-primary);
+  background-color: #EBC500;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.coursesTitle {
+  display: none;
+
+  @media (max-width: 640px) {
+    display: block;
+  }
 }
 
 .course {
@@ -77,20 +135,28 @@
   background: var(--white);
   border: 1px solid var(--white);
   border-radius: 12px;
+  white-space: nowrap;
 
   @media (any-hover: hover) {
     cursor: pointer;
     transition: all 0.3s ease 0s;
+
     &:hover {
-      background: var(--surface-yellow);
+      background: #EBC500;
       color: var(--white);
-      border-color: var(--surface-yellow);
+      border-color: #EBC500;
     }
   }
 
   &.active {
-    background: var(--surface-yellow);
+    background: #EBC500;
     color: var(--white);
-    border-color: var(--surface-yellow);
+    border-color: #EBC500;
+  }
+}
+
+.sidebar {
+  @media (min-width: 640px) {
+    display: none !important;
   }
 }

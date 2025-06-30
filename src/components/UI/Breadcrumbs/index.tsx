@@ -18,6 +18,7 @@ const Breadcrumbs: React.FC<PropsType> = ({ className, items = [] }) => {
       {items.map((item, index) => {
         return (
           <Link
+            key={index}
             to={item.href}
             className={`${style.link} ${
               items.length - 1 === index && style.active

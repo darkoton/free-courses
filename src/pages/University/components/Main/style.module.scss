@@ -14,7 +14,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: end;
-  padding-top: 106.5px;
+  padding-bottom: 26.5px;
   flex-direction: column;
   gap: 24px;
 
@@ -101,7 +101,7 @@
   text-transform: capitalize;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: var(--text-secondory-light);
+  color: var(--text-secondary-light);
 }
 
 .languages {

@@ -7,6 +7,8 @@ type PropsType = {
   onClick?: () => void;
   type?: "yellow" | "white";
   decor?: boolean;
+
+  disabled?: boolean;
 };
 
 const Button: React.FC<PropsType> = ({
@@ -15,11 +17,13 @@ const Button: React.FC<PropsType> = ({
   onClick,
   type = "yellow",
   decor = false,
+  disabled,
 }) => {
   return (
     <button
       onClick={onClick}
       className={`${style["type-" + type]} ${style.button} ${className}`}
+      disabled={disabled}
     >
       {children}
 
