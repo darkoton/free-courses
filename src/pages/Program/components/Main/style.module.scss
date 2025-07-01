@@ -1,6 +1,7 @@
 .main {
   background-color: #fff;
   overflow: hidden;
+  @include fluid(margin-bottom, 48px, 32px, 375px, 1236px);
 }
 
 .wrapper {
