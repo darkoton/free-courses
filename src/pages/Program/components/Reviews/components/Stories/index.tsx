@@ -77,10 +77,10 @@ const Stories = () => {
           <div className={style.reviews}>
             <div className={style.reviewsDisplay}>
               <div className={style.reviewsStars}>
-                <Star className={style.reviewsStar} /><span className='h3-bold-responsive text-surface-secondory'>4,5</span>
+                <Star className={style.reviewsStar} /><span className='h3-bold-responsive text-surface-secondary'>4,5</span>
               </div>
 
-              <p className={`p-body-responsive text-secondory-light ${style.reviewsCount}`}>(1k reviews)</p>
+              <p className={`p-body-responsive text-secondary-light ${style.reviewsCount}`}>(1k reviews)</p>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Card = ({ avatar, name, role, text }: StoryType) => {
 
       <div className={style.cardInfo}>
         <p className='p-bold-responsive'>{name}</p>
-        <p className={`small text-secondory-light`}>{role}</p>
+        <p className={`small text-secondary-light`}>{role}</p>
       </div>
     </div>
 

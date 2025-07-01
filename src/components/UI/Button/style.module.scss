@@ -13,19 +13,37 @@
     background: var(--surface-yellow);
     border-color: var(--surface-yellow);
     color: var(--white);
+
+    @media (any-hover: hover) {
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background-color: #ffde36;
+        border-color: #ffde36;
+      }
+    }
   }
 
   &.type-white {
     background: var(--white);
     border-color: var(--text-secondary-light);
     color: var(--text-primary);
+
+    @media (any-hover: hover) {
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background-color: #cecece;
+        border-color: #cecece;
+      }
+    }
   }
 
   @media (max-width: 640px) {
     font-size: 14px;
   }
 
-  &:disabled{
+  &:disabled {
     opacity: 0.4;
   }
 }
@@ -35,4 +53,5 @@
   z-index: -1;
   bottom: 0;
   right: 0;
+  height: 100%;
 }

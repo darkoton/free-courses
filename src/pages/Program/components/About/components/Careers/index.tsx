@@ -5,7 +5,7 @@ const Careers = () => {
     <div className='container'>
       <div className={style.body}>
         <div className={style.left}>
-          <h2 className={`h4-bold-responsive text-surface-secondory ${style.title}`}>
+          <h2 className={`h4-bold-responsive text-surface-secondary ${style.title}`}>
             <img className={style.decor} src='/assets/img/yellow-decor.svg' alt='Decor' />
             <span>Discover the careers you’ll have access to</span>
           </h2>

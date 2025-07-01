@@ -7,6 +7,7 @@ const Paths = () => {
     <Link to={'/explore-topics'}>Explore Topics</Link>
     <Link to={'/university'}>University</Link>
     <Link to={'/program'}>Program</Link>
+    <Link to={'/contacts'}>Contacts</Link>
   </div>
 }
 

@@ -20,9 +20,8 @@ const Breadcrumbs: React.FC<PropsType> = ({ className, items = [] }) => {
           <Link
             key={index}
             to={item.href}
-            className={`${style.link} ${
-              items.length - 1 === index && style.active
-            }`}
+            className={`p-body-responsive ${style.link} ${items.length - 1 === index && style.active
+              }`}
           >
             {item.label} {items.length - 1 !== index && "/"}
           </Link>

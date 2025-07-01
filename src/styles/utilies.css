@@ -75,15 +75,7 @@
   letter-spacing: -0.04em;
 
   @media (min-width: 768px) {
-    font-size: 36px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 40px;
-  }
-
-  @media (min-width: 1440px) {
-    font-size: 44px;
+    font-size: 35px;
   }
 }
 
@@ -177,10 +169,14 @@
   color: var(--text-primary);
 }
 
-.text-surface-secondory {
-  color: var(--surface-secondory);
+.text-secondory {
+  color: var(--text-secondary);
 }
 
-.text-secondory-light {
+.text-second .text-surface-secondary {
+  color: var(--surface-secondary);
+}
+
+.text-secondary-light {
   color: var(--text-secondary-light);
 }

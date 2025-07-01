@@ -25,7 +25,7 @@
   display: flex;
   align-items: start;
   gap: 8px;
-  color: var(--surface-secondory);
+  color: var(--surface-secondary);
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -40,6 +40,6 @@
 }
 
 .text {
-  color: var(--text-secondory);
+  color: var(--text-secondary);
   max-width: 592px;
 }

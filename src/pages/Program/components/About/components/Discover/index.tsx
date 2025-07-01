@@ -21,10 +21,10 @@ const Discover = () => {
           <div className={style.reviews}>
             <div className={style.reviewsDisplay}>
               <div className={style.reviewsStars}>
-                <Star className={style.reviewsStar} /><span className='h3-bold-responsive text-surface-secondory'>4,5</span>
+                <Star className={style.reviewsStar} /><span className='h3-bold-responsive text-surface-secondary'>4,5</span>
               </div>
 
-              <p className={`p-body-responsive text-secondory-light ${style.reviewsCount}`}>(1k reviews)</p>
+              <p className={`p-body-responsive text-secondary-light ${style.reviewsCount}`}>(1k reviews)</p>
             </div>
 
             <Button className={style.reviewsButton} type='white'>Add a review</Button>

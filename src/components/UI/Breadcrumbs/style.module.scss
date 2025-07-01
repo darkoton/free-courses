@@ -1,8 +1,8 @@
 .breadcrumbs {
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-  flex-wrap: wrap;
+  // display: flex;
+  // align-items: center;
+  // column-gap: 5px;
+  // flex-wrap: wrap;
 }
 
 .link {
@@ -11,7 +11,8 @@
   line-height: 150%;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: var(--text-secondory);
+  color: var(--text-secondary);
+  margin-right: 5px;
 
   @media (max-width: 640px) {
     font-size: 14px;
@@ -27,7 +28,7 @@
     transition: all 0.3s ease 0s;
 
     &:hover {
-      color: var(--text-secondory);
+      color: var(--text-secondary);
       text-decoration: underline;
     }
   }
