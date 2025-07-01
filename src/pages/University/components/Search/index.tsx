@@ -1,4 +1,4 @@
-import { Button } from "@/components/UI";
+import { Button, Tabs } from "@/components/UI";
 import style from "./style.module.scss";
 import { Search as IconSearch } from "@/components/icons";
 import ArrowDown from "@/components/icons/ArrowDown";
@@ -7,33 +7,41 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper/modules";
 
+const tabs = [{
+  label: 'About',
+  value: 'about'
+}]
+
 const courses: {
   label: string;
   active: boolean;
 }[] = [
-  {
-    label: "Marketing",
-    active: false,
-  },
-  {
-    label: "Computer science",
-    active: true,
-  },
-  {
-    label: "Design",
-    active: false,
-  },
-  {
-    label: "Buisness",
-    active: false,
-  },
-];
+    {
+      label: "Marketing",
+      active: false,
+    },
+    {
+      label: "Computer science",
+      active: true,
+    },
+    {
+      label: "Design",
+      active: false,
+    },
+    {
+      label: "Buisness",
+      active: false,
+    },
+  ];
 
 const Search = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
+  const [selectTab, setSelectTab] = useState('about')
 
   return (
-    <div className={style.main}>
+    <div className={style.searchBlock}>
+
+
       <Sidebar
         show={showSidebar}
         close={() => setShowSidebar(false)}
@@ -42,6 +50,9 @@ const Search = () => {
 
       <div className="container">
         <div className={style.body}>
+          <Tabs className={style.tabs} value={selectTab} onChange={setSelectTab} items={tabs} />
+
+
           <img
             className={style.decor}
             src="/assets/img/university/decor.svg"
@@ -97,9 +108,8 @@ const Search = () => {
                 return (
                   <SwiperSlide key={course.label}>
                     <button
-                      className={`p-body-responsive ${style.course} ${
-                        course.active ? style.active : ""
-                      }`}
+                      className={`p-body-responsive ${style.course} ${course.active ? style.active : ""
+                        }`}
                     >
                       {course.label}
                     </button>

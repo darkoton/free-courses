@@ -1,6 +1,6 @@
 import Breadcrumbs, { type ItemType } from "@/components/UI/Breadcrumbs";
 import style from "./style.module.scss";
-import { Star, Dot, ArrowRight } from "@/components/icons";
+import { Star, Dot, ArrowRightButton } from "@/components/icons";
 import { Button } from "@/components/UI";
 
 const pathBradcrumbs: ItemType[] = [
@@ -63,7 +63,7 @@ const Main = () => {
 
               <Button className={style.button} decor={true} type="yellow">
                 <span>Ask for information</span>
-                <ArrowRight className={style.arrow} />
+                <ArrowRightButton className={style.arrow} />
               </Button>
 
               <div className={style.offer}>

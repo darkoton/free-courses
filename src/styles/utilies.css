@@ -173,6 +173,14 @@
   }
 }
 
-.heading .text-primary {
+.text-primary {
   color: var(--text-primary);
+}
+
+.text-surface-secondory {
+  color: var(--surface-secondory);
+}
+
+.text-secondory-light {
+  color: var(--text-secondary-light);
 }

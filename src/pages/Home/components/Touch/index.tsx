@@ -1,6 +1,6 @@
 import style from './style.module.scss'
 import { Button } from '@components/UI';
-import { ArrowRight } from '@components/icons';
+import { ArrowRightButton } from '@components/icons';
 
 const Touch = () => {
   return <div className={style.touch}>
@@ -15,7 +15,7 @@ const Touch = () => {
 
         <Button decor={true} type='yellow' className={style.button}>
           <span>GET STARTED</span>
-          <ArrowRight className={style.ButtonArrow} />
+          <ArrowRightButton className={style.ButtonArrow} />
         </Button>
       </div>
     </div>

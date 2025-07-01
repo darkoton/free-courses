@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 
-import { Home, ExploreTopics, University } from "@/pages";
+import { Home, ExploreTopics, University, Program, Paths } from "@/pages";
 
 const routes = createBrowserRouter([
   {
@@ -14,6 +14,14 @@ const routes = createBrowserRouter([
   {
     path: "/university",
     element: <University />,
+  },
+  {
+    path: "/program",
+    element: <Program />,
+  },
+  {
+    path: "/paths",
+    element: <Paths />,
   },
 ]);
 
