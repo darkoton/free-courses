@@ -1,9 +1,9 @@
 import style from './style.module.scss'
 
 export type ItemType = {
-    value: string;
-    label: string;
-  }
+  value: string;
+  label: string;
+}
 
 type PropsType = {
   className?: string
@@ -19,7 +19,7 @@ const Tabs = ({
   onChange = () => { }
 }: PropsType) => {
   return <div className={`${style.tabs} ${className}`}>
-    {items.map(item => <button onClick={() => onChange(item.value)}
+    {items.map((item) => <button key={item.value} onClick={() => onChange(item.value)}
       className={`p-bold-responsive ${style.tab} ${value === item.value ? style.active : ''}`}>{item.label}</button>
     )}
   </div>

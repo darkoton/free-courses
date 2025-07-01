@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import Main from "./components/Main";
 import About from "./components/About";
+import Reviews from "./components/Reviews";
 
 const tabs: ItemType[] = [
   {
@@ -27,6 +28,7 @@ const Universty = () => {
         <Tabs value={currentTab} onChange={setCurrentTab} items={tabs} />
       </div>
       {currentTab === 'about' && <About />}
+      {currentTab === 'reviews' && <Reviews />}
 
     </DefalutLayout>
   );
