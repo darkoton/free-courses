@@ -21,8 +21,7 @@ const path: ItemType[] = [
 ]
 
 const Contacts = () => {
-  return
-  <DefalutLayout>
+  return <DefalutLayout>
     <div className={style.contacts}>
       <div className='container'>
         <div className={style.body}>
